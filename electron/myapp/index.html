@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Just for test!</title>
+  </head>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <body>
+    <h1>Test!</h1>
+    <div ng-app="app" ng-controller="SpicyController">
+        <input ng-model="customSpice">
+        <button ng-click="spicy('chili')">Chili</button>
+        <button ng-click="spicy(customSpice)">Custom spice</button>
+        <p>The food is {{spice}} spicy!</p>
+    </div>
+    <script>
+        require("./app.js")
+    </script>
+  </body>
+</html>
