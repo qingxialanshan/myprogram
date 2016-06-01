@@ -1,5 +1,12 @@
 {
     "name":"test",
     "version":"0.1.0",
-    "main":"main.js"
+    "main":"main.js",
+    "scripts":{
+        "test":"exit 1",
+        "start":"node_modules/.bin/electron main.js"
+    },
+    "devDependencies": { 
+        "electron-prebuilt": "^0.37.0" 
+    }
 }
