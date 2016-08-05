@@ -1,4 +1,5 @@
-# 0004: count the word in the txt
+# 0006: find the key words in the txt file
+
 import re
 import sys
 
@@ -12,9 +13,11 @@ def find_in_file(fname):
                     dic[i]=1
                 else:
                     dic[i]=dic[i]+1
-    print dic 
     return dic
+def find_key_word(infile):
+    word_count_dic = find_in_file(infile)
+    return sorted(word_count_dic.items(), key=lambda x:x[1])[-1][0]
 
 if __name__=="__main__":
-    #print count_word(sys.argv[1],sys.argv[2])
-    find_in_file(sys.argv[1])
+    print find_key_word(sys.argv[1])
+    
