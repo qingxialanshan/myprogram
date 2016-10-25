@@ -1,0 +1,832 @@
+[ 'nvasm_tests',
+  'profiler_tests',
+  'cuda_memcheck_tests_L0',
+  'cuda_memcheck_tests_L1',
+  'cuda_memcheck_mps_tests_L0',
+  'cuda_memcheck_mps_tests_L1',
+  'cupti_tests_L0',
+  'cupti_tests_L1',
+  'cupti_multi_tests',
+  'cupti_mps_tests_L0',
+  'cupti_mps_tests_L1',
+  'gwiz_tests',
+  'chiron_tests',
+  'debugger-testsuite-sgdb',
+  'debugger-testsuite-remote',
+  'debugger-testsuite-modes',
+  'debugger-testsuite',
+  'cider_tests',
+  'cider_samples_tests_L0',
+  'nvprof_tests_L0',
+  'nvprof_tests_L1',
+  'nvprof_sample_tests',
+  'nvprof_32on64_tests_L0',
+  'nvprof_32on64_tests_L1',
+  'nvprof_multigpu_tests',
+  'nvprof_perf_tests',
+  'nvprof_r7_5_bc',
+  'nvprof_r7_0_bc',
+  'nvprof_r6_5_bc',
+  'nvprof_r6_0_bc',
+  'nvprof_r5_5_bc',
+  'cupti_r5_5_bc',
+  'cupti_r6_0_bc',
+  'cupti_r6_5_bc',
+  'cupti_r7_0_bc',
+  'cupti_r7_5_bc',
+  'debugger_testsuite_r5_5_bc',
+  'debugger_testsuite_r6_0_bc',
+  'debugger_testsuite_r6_5_bc',
+  'debugger_testsuite_r7_0_bc',
+  'debugger_testsuite_r7_5_bc',
+  'cuda_memcheck_tests_r5_5_bc',
+  'cuda_memcheck_tests_r6_0_bc',
+  'cuda_memcheck_tests_r6_5_bc',
+  'cuda_memcheck_tests_r7_0_bc',
+  'cuda_memcheck_tests_r7_5_bc',
+  'viper_tests',
+  'cider_samples_tests_L2',
+  'finalize',
+  'nvprof_sample_tests_ppc64le',
+  'cuda_memcheck_apps_tests' ]
+now in nvprof_32on64_tests_L0
+the return is 51
+####
+nvasm_tests
+ |- compiler
+  |- compiler_internal
+   |- compiler_internal_base
+  |- pgi15_9
+  |- pgi16_3
+  |- pgi16_5
+  |- pgi16_7
+ |- cuda
+ |- cuos
+ |- driver
+ |- driver_headers
+####
+profiler_tests
+ |- compiler
+  |- compiler_internal
+   |- compiler_internal_base
+  |- pgi15_9
+  |- pgi16_3
+  |- pgi16_5
+  |- pgi16_7
+ |- cuda
+ |- cuos
+ |- driver
+ |- driver_headers
+####
+cuda_memcheck_tests_L0
+ |- driver
+ |- cuda-memcheck
+  |- compiler
+   |- compiler_internal
+    |- compiler_internal_base
+   |- pgi15_9
+   |- pgi16_3
+   |- pgi16_5
+   |- pgi16_7
+  |- cuos
+  |- tools_shared
+   |- driver_headers
+  |- demangler
+  |- cuda
+  |- cuda-memcheck_headers
+  |- cuda_devtools_headers
+####
+cuda_memcheck_tests_L1
+ |- driver
+ |- cuda-memcheck
+  |- compiler
+   |- compiler_internal
+    |- compiler_internal_base
+   |- pgi15_9
+   |- pgi16_3
+   |- pgi16_5
+   |- pgi16_7
+  |- cuos
+  |- tools_shared
+   |- driver_headers
+  |- demangler
+  |- cuda
+  |- cuda-memcheck_headers
+  |- cuda_devtools_headers
+####
+cuda_memcheck_mps_tests_L0
+####
+cuda_memcheck_mps_tests_L1
+####
+cupti_tests_L0
+ |- cuos
+  |- compiler
+   |- compiler_internal
+    |- compiler_internal_base
+   |- pgi15_9
+   |- pgi16_3
+   |- pgi16_5
+   |- pgi16_7
+ |- tools_shared
+  |- driver_headers
+ |- cuda
+ |- nvtx
+ |- cupti
+  |- driver
+  |- xutils
+####
+cupti_tests_L1
+ |- cuos
+  |- compiler
+   |- compiler_internal
+    |- compiler_internal_base
+   |- pgi15_9
+   |- pgi16_3
+   |- pgi16_5
+   |- pgi16_7
+ |- tools_shared
+  |- driver_headers
+ |- cuda
+ |- nvtx
+ |- cupti
+  |- driver
+  |- xutils
+####
+cupti_multi_tests
+####
+cupti_mps_tests_L0
+####
+cupti_mps_tests_L1
+####
+gwiz_tests
+ |- compiler
+  |- compiler_internal
+   |- compiler_internal_base
+  |- pgi15_9
+  |- pgi16_3
+  |- pgi16_5
+  |- pgi16_7
+ |- gwiz
+  |- cuda
+  |- npp_headers
+  |- cufft_headers
+  |- xutils
+ |- cuos
+ |- mkl
+ |- ipp
+ |- windows_sdk71
+ |- msvc100sp1
+####
+chiron_tests
+ |- compiler
+  |- compiler_internal
+   |- compiler_internal_base
+  |- pgi15_9
+  |- pgi16_3
+  |- pgi16_5
+  |- pgi16_7
+ |- driver_headers
+ |- cupti
+  |- cuos
+  |- tools_shared
+  |- cuda
+  |- nvtx
+  |- driver
+  |- xutils
+ |- pthread_activity
+####
+debugger-testsuite-sgdb
+####
+debugger-testsuite-remote
+####
+debugger-testsuite-modes
+####
+debugger-testsuite
+ |- compiler
+  |- compiler_internal
+   |- compiler_internal_base
+  |- pgi15_9
+  |- pgi16_3
+  |- pgi16_5
+  |- pgi16_7
+ |- driver
+ |- cuda
+ |- cuda-gdb
+  |- cuda-gdb_headers
+ |- driver_headers
+ |- pgi_nightly
+####
+cider_tests
+ |- cider
+  |- compiler
+   |- compiler_internal
+    |- compiler_internal_base
+   |- pgi15_9
+   |- pgi16_3
+   |- pgi16_5
+   |- pgi16_7
+  |- cuos
+  |- tools_shared
+   |- driver_headers
+  |- demangler
+  |- cuda
+  |- nvtx
+  |- cupti
+   |- driver
+   |- xutils
+  |- chiron
+   |- pthread_activity
+ |- eclipse
+ |- jdk
+ |- jre
+ |- maven
+ |- cuda-gdb
+  |- cuda-gdb_headers
+####
+cider_samples_tests_L0
+####
+nvprof_tests_L0
+ |- compiler
+  |- compiler_internal
+   |- compiler_internal_base
+  |- pgi15_9
+  |- pgi16_3
+  |- pgi16_5
+  |- pgi16_7
+ |- cuos
+ |- tools_shared
+  |- driver_headers
+ |- cuda
+ |- nvtx
+ |- cupti
+  |- driver
+  |- xutils
+ |- demangler
+ |- nvprof
+  |- pgi
+  |- chiron
+   |- pthread_activity
+ |- mkl
+ |- pgi15_10
+####
+nvprof_tests_L1
+ |- compiler
+  |- compiler_internal
+   |- compiler_internal_base
+  |- pgi15_9
+  |- pgi16_3
+  |- pgi16_5
+  |- pgi16_7
+ |- cuos
+ |- tools_shared
+  |- driver_headers
+ |- cuda
+ |- nvtx
+ |- cupti
+  |- driver
+  |- xutils
+ |- demangler
+ |- nvprof
+  |- pgi
+  |- chiron
+   |- pthread_activity
+ |- mkl
+ |- pgi15_10
+####
+nvprof_sample_tests
+ |- driver
+ |- cupti
+  |- compiler
+   |- compiler_internal
+    |- compiler_internal_base
+   |- pgi15_9
+   |- pgi16_3
+   |- pgi16_5
+   |- pgi16_7
+  |- cuos
+  |- tools_shared
+   |- driver_headers
+  |- cuda
+  |- nvtx
+  |- xutils
+ |- nvprof
+  |- demangler
+  |- pgi
+  |- chiron
+   |- pthread_activity
+ |- samples
+ |- clang3_7
+ |- icc16
+ |- msvc100sp1
+ |- directx_sdk2010
+ |- windows_sdk71
+ |- dotnet40
+ |- cuda_nexus_extensions
+ |- windows_sdk81
+ |- msvc110
+ |- msvc140
+  |- universal_crt_sdk_10_0_10240
+####
+nvprof_32on64_tests_L0
+nvprof_32on64_tests_L0 [ { depth: 0,
+    data: {},
+    parent: null,
+    id: 'nvprof_32on64_tests_L0',
+    children: [] } ]
+####
+nvprof_32on64_tests_L1
+####
+nvprof_multigpu_tests
+####
+nvprof_perf_tests
+ |- compiler
+  |- compiler_internal
+   |- compiler_internal_base
+  |- pgi15_9
+  |- pgi16_3
+  |- pgi16_5
+  |- pgi16_7
+ |- cuos
+ |- tools_shared
+  |- driver_headers
+ |- cuda
+ |- nvtx
+ |- cupti
+  |- driver
+  |- xutils
+ |- demangler
+ |- nvprof
+  |- pgi
+  |- chiron
+   |- pthread_activity
+ |- mkl
+####
+nvprof_r7_5_bc
+ |- cuda_75_release
+ |- driver
+ |- driver_headers
+####
+nvprof_r7_0_bc
+ |- cuda_70_release
+ |- driver
+ |- driver_headers
+####
+nvprof_r6_5_bc
+ |- cuda_65_release
+ |- driver
+ |- driver_headers
+####
+nvprof_r6_0_bc
+ |- cuda_60_release
+ |- driver
+ |- driver_headers
+####
+nvprof_r5_5_bc
+ |- cuda_55_release
+ |- driver
+ |- driver_headers
+####
+cupti_r5_5_bc
+ |- cuda_55_release
+ |- driver
+####
+cupti_r6_0_bc
+ |- cuda_60_release
+ |- driver
+####
+cupti_r6_5_bc
+ |- cuda_65_release
+ |- driver
+####
+cupti_r7_0_bc
+ |- cuda_70_release
+ |- driver
+####
+cupti_r7_5_bc
+ |- cuda_75_release
+ |- driver
+####
+debugger_testsuite_r5_5_bc
+ |- cuda_55_release
+ |- driver
+####
+debugger_testsuite_r6_0_bc
+ |- cuda_60_release
+ |- driver
+####
+debugger_testsuite_r6_5_bc
+ |- cuda_65_release
+ |- driver
+####
+debugger_testsuite_r7_0_bc
+ |- cuda_70_release
+ |- driver
+####
+debugger_testsuite_r7_5_bc
+ |- cuda_75_release
+ |- driver
+####
+cuda_memcheck_tests_r5_5_bc
+ |- cuda_55_release
+ |- driver
+####
+cuda_memcheck_tests_r6_0_bc
+ |- cuda_60_release
+ |- driver
+####
+cuda_memcheck_tests_r6_5_bc
+ |- cuda_65_release
+ |- driver
+####
+cuda_memcheck_tests_r7_0_bc
+ |- cuda_70_release
+ |- driver
+####
+cuda_memcheck_tests_r7_5_bc
+ |- cuda_75_release
+ |- driver
+####
+viper_tests
+ |- compiler
+  |- compiler_internal
+   |- compiler_internal_base
+  |- pgi15_9
+  |- pgi16_3
+  |- pgi16_5
+  |- pgi16_7
+ |- driver
+ |- driver_headers
+ |- cuos
+ |- nvprof
+  |- tools_shared
+  |- demangler
+  |- cuda
+  |- nvtx
+  |- cupti
+   |- xutils
+  |- pgi
+  |- chiron
+   |- pthread_activity
+ |- viper
+ |- eclipse
+ |- jdk
+ |- jre
+ |- maven
+####
+cider_samples_tests_L2
+####
+finalize
+####
+nvprof_sample_tests_ppc64le
+ |- driver
+ |- cupti
+  |- compiler
+   |- compiler_internal
+    |- compiler_internal_base
+   |- pgi15_9
+   |- pgi16_3
+   |- pgi16_5
+   |- pgi16_7
+  |- cuos
+  |- tools_shared
+   |- driver_headers
+  |- cuda
+  |- nvtx
+  |- xutils
+ |- nvprof
+  |- demangler
+  |- pgi
+  |- chiron
+   |- pthread_activity
+ |- samples
+####
+cuda_memcheck_apps_tests
+ |- driver
+ |- cuda-memcheck
+  |- compiler
+   |- compiler_internal
+    |- compiler_internal_base
+   |- pgi15_9
+   |- pgi16_3
+   |- pgi16_5
+   |- pgi16_7
+  |- cuos
+  |- tools_shared
+   |- driver_headers
+  |- demangler
+  |- cuda
+  |- cuda-memcheck_headers
+  |- cuda_devtools_headers
+ |- cuda_apps_tests_L0
+ |- cuda_apps_tests_L1
+The tree is: [ { depth: 0,
+    data: {},
+    parent: null,
+    id: 'nvasm_tests',
+    children: [ [Object], [Object], [Object], [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'profiler_tests',
+    children: [ [Object], [Object], [Object], [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cuda_memcheck_tests_L0',
+    children: [ [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cuda_memcheck_tests_L1',
+    children: [ [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cuda_memcheck_mps_tests_L0',
+    children: [] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cuda_memcheck_mps_tests_L1',
+    children: [] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cupti_tests_L0',
+    children: [ [Object], [Object], [Object], [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cupti_tests_L1',
+    children: [ [Object], [Object], [Object], [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cupti_multi_tests',
+    children: [] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cupti_mps_tests_L0',
+    children: [] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cupti_mps_tests_L1',
+    children: [] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'gwiz_tests',
+    children: 
+     [ [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'chiron_tests',
+    children: [ [Object], [Object], [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'debugger-testsuite-sgdb',
+    children: [] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'debugger-testsuite-remote',
+    children: [] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'debugger-testsuite-modes',
+    children: [] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'debugger-testsuite',
+    children: [ [Object], [Object], [Object], [Object], [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cider_tests',
+    children: [ [Object], [Object], [Object], [Object], [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cider_samples_tests_L0',
+    children: [] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'nvprof_tests_L0',
+    children: 
+     [ [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'nvprof_tests_L1',
+    children: 
+     [ [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'nvprof_sample_tests',
+    children: 
+     [ [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'nvprof_32on64_tests_L0',
+    children: [] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'nvprof_32on64_tests_L1',
+    children: [] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'nvprof_multigpu_tests',
+    children: [] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'nvprof_perf_tests',
+    children: 
+     [ [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'nvprof_r7_5_bc',
+    children: [ [Object], [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'nvprof_r7_0_bc',
+    children: [ [Object], [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'nvprof_r6_5_bc',
+    children: [ [Object], [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'nvprof_r6_0_bc',
+    children: [ [Object], [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'nvprof_r5_5_bc',
+    children: [ [Object], [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cupti_r5_5_bc',
+    children: [ [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cupti_r6_0_bc',
+    children: [ [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cupti_r6_5_bc',
+    children: [ [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cupti_r7_0_bc',
+    children: [ [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cupti_r7_5_bc',
+    children: [ [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'debugger_testsuite_r5_5_bc',
+    children: [ [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'debugger_testsuite_r6_0_bc',
+    children: [ [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'debugger_testsuite_r6_5_bc',
+    children: [ [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'debugger_testsuite_r7_0_bc',
+    children: [ [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'debugger_testsuite_r7_5_bc',
+    children: [ [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cuda_memcheck_tests_r5_5_bc',
+    children: [ [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cuda_memcheck_tests_r6_0_bc',
+    children: [ [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cuda_memcheck_tests_r6_5_bc',
+    children: [ [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cuda_memcheck_tests_r7_0_bc',
+    children: [ [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cuda_memcheck_tests_r7_5_bc',
+    children: [ [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'viper_tests',
+    children: 
+     [ [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object],
+       [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cider_samples_tests_L2',
+    children: [] },
+  { depth: 0, data: {}, parent: null, id: 'finalize', children: [] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'nvprof_sample_tests_ppc64le',
+    children: [ [Object], [Object], [Object], [Object] ] },
+  { depth: 0,
+    data: {},
+    parent: null,
+    id: 'cuda_memcheck_apps_tests',
+    children: [ [Object], [Object], [Object], [Object] ] } ]
